@@ -1,0 +1,19 @@
+{
+  "name": "js-lib-publish-test",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WingsDevelopment/js-lib-publish-test"
+  },
+  "author": "Wings Development",
+  "license": "MIT",
+  "scripts": {
+    "compile": "rd /s /q dist\\lib && tsc && tsc --build tsconfig.es5.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
