@@ -1,5 +1,3 @@
-export const stojce = (elements: string[]) => {
-  return elements.map((element) => {
-    return element.toUpperCase();
-  });
+export const stojce = (input: string[]) => {
+  return input.map((x) => x.toUpperCase());
 };

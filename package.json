@@ -1,6 +1,11 @@
 {
-  "name": "js-lib-publish-test",
-  "version": "1.0.0",
+  "name": "stojadin-js-lib-publish-test",
+  "version": "1.0.2",
+  "main": "dist/lib/es6/index.js",
+  "types": "dist/lib/es6/index.d.ts",
+  "files": [
+    "dist/lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WingsDevelopment/js-lib-publish-test"
@@ -8,7 +13,8 @@
   "author": "Wings Development",
   "license": "MIT",
   "scripts": {
-    "compile": "rd /s /q dist\\lib && tsc && tsc --build tsconfig.es5.json"
+    "compile": "rd /s /q dist\\lib && tsc && tsc --build tsconfig.es5.json",
+    "build:": "npx tsc"
   },
   "publishConfig": {
     "access": "public"

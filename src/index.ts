@@ -1,1 +1,1 @@
-export { stojce } from "./stj/stojce";
+export * from "./stj/stojce";
